@@ -4,9 +4,9 @@
 //dia to 
 //chong dia nho
 //di chuyen co ban:
-//chong dia nho --> kho
-//dia lon --> dich
-//chong dia nho --> dich
+//chong dia nho (n-1) --> kho(b))
+//dia lon (n)--> dich(c)
+//chong dia nho(n-1)--> dich(c)
 void thap(int n, char a, char b, char c){
 //n(so dia) , a(nguon), b(kho), c(dich)
 //neu chi con 1 dia thi chuyen thang qua dich
@@ -14,6 +14,9 @@ void thap(int n, char a, char b, char c){
      printf("di chuyen dia %d %c-->%c "n, a, c);
      return;
   }
+  thap(n - 1, a, c, b);
+  printf("di chuyen dia %c -- > %c ", n,a,c);
+  thap(n - 1, )
   
 }
 int main(){
